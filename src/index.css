@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+  background: #284b63;
+  color: #d9d9d9;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+p,
+a {
+  font-size: 1.2rem;
+  color: #d9d9d9;
+  text-align: center;
+}
+a {
+  width: 100%;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #d9d9d9;
+  text-decoration: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.border {
+  border: 2px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+.icon-button {
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  color: #d9d9d9;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.icon-button:hover {
+  color: #fff;
+  animation: bonce 0.3s;
+}
+.icon-button[disabled] {
+  visibility: hidden;
+}
+
+@keyframes bonce {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+}
+.errmsg {
+  font-size: 1.2rem;
+  color: hsl(0, 100%, 60%);
+  text-align: center;
+  padding: 0.25em;
+  margin-bottom: 0.5em;
+}
+.offscreen {
+  display: none;
+}
