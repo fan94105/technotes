@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 import { setCredentials } from "../../features/auth/authSlice"
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: "https://technotes-api.onrender.com",
+  baseUrl: "https://technotes-api-msr9.onrender.com",
   // 在每個請求中都發送 token
   credentials: "include",
   // 設置請求 headers
